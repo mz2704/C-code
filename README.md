@@ -2,35 +2,37 @@
 program to make simple calculator using switch*/
 
 #include<stdio.h>
-int main();
+int main()
 {
  int a,b,sum,sub,multi,divi;
- char operator;
- scanf("%c",&operator);
- scanf("%d %d",&a,&b);
+ int operator;
+ printf("enter any two values\n");
+ scanf("%d \n %d",&a,&b);
+ printf(" enter 1 for addition\n enter 2 for substraction\n enter 3 for multipication\n enter 4 for division\n");
+ scanf("%d",&operator);
+ 
   switch(operator)
   {
-      case '+':
+      case 1:
       sum=a+b;
-      cout<<sum;
+      printf("%d",sum);
       break;
-      case '-':
+      case 2:
       sub=a-b;
-      cout<<sub;
+      printf("%d",sub);
       break;
-      case '*':
+      case 3:
       multi=a*b;
-      cout<<multi;
+      printf("%d",multi);
       break;
-      case '/':
+      case 4:
       divi=a/b;
-      cout<<divi;
+      printf("%d",divi);
       break;
       default:
-      cout<<"enter valid operator";
+      printf("enter valid operator");
       
   }
   return 0;
-  } 
- 
+} 
  
