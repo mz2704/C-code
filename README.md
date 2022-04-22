@@ -1,11 +1,11 @@
-# C-code
-program to make simple calculator using switch
+/*# C-code
+program to make simple calculator using switch*/
 
 #include<stdio.h>
 int main();
 {
  int a,b,sum,sub,multi,divi;
- char operator
+ char operator;
  scanf("%c",&operator);
  scanf("%d %d",&a,&b);
   switch(operator)
